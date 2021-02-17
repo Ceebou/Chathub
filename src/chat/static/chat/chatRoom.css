@@ -1,0 +1,27 @@
+#chat-log-container {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.message-container {
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    display: block;
+    clear: both;
+    max-width: 60%;
+    word-wrap: break-word;
+}
+
+.otherMessage {
+    background-color: rgb(91, 231, 156);
+    float: left;
+    margin-left: 10%;
+    
+}
+
+.myMessage {
+    background-color: rgb(12, 182, 182);
+    float: right;
+    margin-right: 10%;
+}

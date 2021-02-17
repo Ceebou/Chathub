@@ -5,7 +5,7 @@ chatSocket.onmessage = function (event) {
     let data = JSON.parse(event.data)
     let message = data.message
     console.log("message from server: " + event.data)
-    message.wasMe = false
+    message.wasMe = message.author === "Me"
     messages.push(message)
     appendMessage(message)
 }

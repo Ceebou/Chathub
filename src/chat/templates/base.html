@@ -1,19 +1,11 @@
-<style>
-    label, input {
-        display: block;
-    }
-    span.helptext {
-        display: none;
-    }
-</style>
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
 <div class="bannerContainer">
-<p class="platformName">ChatHub</p>
+    <p class="platformName">ChatHub</p>
+    <p class="username"> {{ username }} </p>
 </div>
 
 <div class="contentContainer">
-<h1>Welcome to ChatHub</h1>
 {% block content %}
 {% endblock %}
 </div>

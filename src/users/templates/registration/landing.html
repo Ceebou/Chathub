@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<a href="{% url 'login' %}">Login</a>
-<a href="{% url 'registration' %}">Create an account</a>
+<div class="redirectButton">
+    <a href="{% url 'login' %}">Login</a>
+</div>
+<div class="redirectButton">
+    <a href="{% url 'registration' %}">Create an account</a>
+</div>
 {% endblock %}
